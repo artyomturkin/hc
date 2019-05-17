@@ -1,0 +1,41 @@
+name: hs
+version: "1.0.0"
+summary: Hashicorp products meta-package
+description: >
+  Hashicorp products packaged into one snap
+  - Consul v1.5.0
+  - Nomad v0.9.1
+  - Vault v1.1.2
+  - Terraform v0.11.14
+  - Packer v1.4.1
+confinement: classic
+base: core18
+parts:
+  consul:
+    plugin: dump
+    source: https://releases.hashicorp.com/consul/1.5.0/consul_1.5.0_linux_amd64.zip
+  nomad:
+    plugin: dump
+    source: https://releases.hashicorp.com/nomad/0.9.1/nomad_0.9.1_linux_amd64.zip
+  vault:
+    plugin: dump
+    source: https://releases.hashicorp.com/vault/1.1.2/vault_1.1.2_linux_amd64.zip
+  terraform:
+    plugin: dump
+    source: https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip
+  packer:
+    plugin: dump
+    source: https://releases.hashicorp.com/packer/1.4.1/packer_1.4.1_linux_amd64.zip
+    
+apps:
+  consul:
+    command: consul
+  nomad:
+    command: nomad
+  vault:
+    command: vault
+  terraform:
+    command: terraform
+  packer:
+    command: packer
+
