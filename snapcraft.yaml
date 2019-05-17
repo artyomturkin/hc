@@ -1,5 +1,5 @@
 name: hs
-version: "1.0.0"
+version: "1.0.1"
 architectures:
   - build-on: [amd64]
 summary: Hashicorp products meta-package
