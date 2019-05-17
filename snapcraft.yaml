@@ -1,9 +1,9 @@
 name: hs
-version: "1.0.1"
+version: "1.0.0"
 architectures:
-  - build-on: [amd64]
+  - amd64
 summary: Hashicorp products meta-package
-description: >
+description: |
   Hashicorp products packaged into one snap
   - Consul v1.5.0
   - Nomad v0.9.1
@@ -40,4 +40,3 @@ apps:
     command: terraform
   packer:
     command: packer
-
